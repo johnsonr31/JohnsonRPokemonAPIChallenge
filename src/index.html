@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon API</title>
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1 class="text-4xl font-bold text-center font-sans headings">
+    PokeApi
+  </h1>
+
+  <br>
+
+  <div class="flex flex-row self-center justify-center">
+    <div class="col-span-6">
+      <label class="relative block">
+      <span class="sr-only">Search</span>
+      <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+      <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
+      </span>
+      <input id="searchBarInput" class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm .flex" placeholder="Search for a Pokemon" type="text" name="search"/>
+      </label>
+    </div>
+    <div class="flex col-span-6">
+      <button id="testBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Search
+      </button>
+    </div>
+    
+  </div>
+  <div class="mainDiv bg-gray-300 rounded-lg m-10 p-5">
+    <div class="flex-row justify-around">
+      <div class="flex justify-between flex-col col-span-6">
+        <p class="italic">Pokemon Name:</p>
+        <p id="pkmnName">...</p>
+        <br>
+        <p class="italic">Type:</p>
+        <p id="pkmnType">...</p>
+        <br>
+        <p class="italic">Location:</p>
+        <p id="pkmnLocation">...</p>
+        <br>
+      </div>
+  
+      <div class="col-span-6">
+        <div id="pkmnSprite" class="bg-gray-200">
+          
+        </div>
+        <div id="pkmnSpriteShiny">
+
+        </div>
+        <div>
+          <p class="italic">Evolutionary Path:</p>
+          <div id="evoLinex">
+
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+    
+    <div class="row-span-full flex-row">
+      <div class="col-span-6">
+      <button id="randomBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Get Random Pokemon
+      </button>
+    </div>
+    <br>
+    <div class="col-span-6">
+      <button id="favoriteBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Add To Favorites
+      </button>
+    </div>
+    </div>
+    
+  </div>
+
+  <!-- Favorites List -->
+  <div class="mainDiv bg-gray-300 rounded-lg m-10 p-5">
+    <div class="flex-row justify-around">
+      <div class="flex justify-between flex-col col-span-6">
+        <h2 class="text-2xl font-bold text-center">Favorites</h2>
+        <br>
+        <div id="favoritesDiv">
+
+        </div>
+      </div>
+  
+  
+
+  
+  <script src="./app.js" type="module"></script>
+</body>
+</html>
