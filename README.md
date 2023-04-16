@@ -1,3 +1,6 @@
+# NOTE
+This project is no longer in development. I am currently working on rebuilding this project in the REACT framework
+
 # JohnsonRPokemonAPIChallenge
 The original API this project pulls data from can be found at https://pokeapi.co/
 
