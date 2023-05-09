@@ -1,6 +1,10 @@
 # NOTE
 This project is no longer in development. I am currently working on rebuilding this project in the REACT framework
 
+The published version of this project can be viewed here: https://johnsonrpokemon.azurewebsites.net/
+
+The current, ReactJS version of this project can be found here: https://github.com/ricRobo4/johnsonpokedex.git
+
 # JohnsonRPokemonAPIChallenge
 The original API this project pulls data from can be found at https://pokeapi.co/
 
